@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: zkey68tb_cv2_17
+name: zkey68tb_cv2_17
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - zkey68tb_cv2_17_left
+  - zkey68tb_cv2_17_right

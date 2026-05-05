@@ -1,0 +1,14 @@
+
+if SHIELD_ZKEY68TB_CV2_17_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "zkey68tb_cv2_17"
+
+endif
+
+if SHIELD_ZKEY68TB_CV2_17_LEFT || SHIELD_ZKEY68TB_CV2_17_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
