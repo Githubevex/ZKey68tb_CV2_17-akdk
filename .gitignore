@@ -1,0 +1,6 @@
+# Keyboard Firmware
+Firmware/
+
+# Build artifacts
+build/
+.cache/
