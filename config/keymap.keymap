@@ -29,24 +29,28 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        Layer0 {
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3            &kp N4  &kp N5       &none      &none        &kp NUMBER_6  &kp N7                 &kp N8             &kp N9          &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E             &kp R   &kp T        &none      &none        &kp Y         &kp U                  &kp I              &kp O           &kp P     &kp LBKT
-&kp CAPS   &kp A     &kp S     &hm LEFT_SHIFT D  &kp F   &hm LCTRL G  &none                   &hm RCTRL H   &kp J                  &hm RIGHT_SHIFT K  &kp L           &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C             &kp V   &kp B        &none                   &kp N         &kp M                  &kp COMMA          &kp DOT         &kp FSLH  &kp INT_RO
-&kp LCTRL  &kp LGUI  &kp LALT  &none             &none   &none        &kp SPACE  &lt 5 ENTER  &kp SPACE     &mt RIGHT_SHIFT GRAVE  &none              &kp LEFT_ARROW  &kp DOWN  &kp RIGHT
+&kp ESC    &kp N1    &kp N2    &kp N3            &kp N4  &kp N5       &none        &none        &kp NUMBER_6  &kp N7                 &kp N8             &kp N9          &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W     &kp E             &kp R   &kp T        &none        &none        &kp Y         &kp U                  &kp I              &kp O           &kp P     &kp LBKT
+&kp CAPS   &kp A     &kp S     &hm LEFT_SHIFT D  &kp F   &hm LCTRL G  &none                     &hm RCTRL H   &kp J                  &hm RIGHT_SHIFT K  &kp L           &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C             &kp V   &kp B        &none                     &kp N         &kp M                  &kp COMMA          &kp DOT         &kp FSLH  &kp INT_RO
+&kp LCTRL  &kp LGUI  &kp LALT  &none             &mo 2   &mo 2        &lt 4 SPACE  &lt 5 ENTER  &kp SPACE     &mt RIGHT_SHIFT GRAVE  &none              &kp LEFT_ARROW  &kp DOWN  &kp RIGHT
             >;
+
+            label = "MAIN";
         };
 
-        layer_1 {
+        Sub {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none   &none  &none  &none         &none         &none       &none          &none       &none
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &kp N6        &kp N7        &kp N8      &kp N9         &kp N0      &kp RBKT
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none         &kp RS(N6)    &kp RS(N7)    &kp RS(N8)  &kp RS(N9)     &kp RS(N0)  &kp NUHS
+&none  &none   &none   &kp F7  &kp F9  &kp Z   &none         &kp RS(RBKT)  &kp RS(NUHS)  &kp MINUS   &kp RS(MINUS)  &kp INT3    &kp RS(INT3)
+&none  &none   &none   &none   &none   &none   &none  &none  &none         &none         &none       &none          &none       &none
             >;
+
+            label = "Sub";
         };
 
         layer_2 {
