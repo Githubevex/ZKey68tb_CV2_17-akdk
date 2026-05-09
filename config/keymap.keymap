@@ -53,14 +53,16 @@
             label = "Sub";
         };
 
-        layer_2 {
+        Func {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none      &none    &none    &none       &none      &none          &none  &none  &none          &none     &none          &none       &kp EQUAL  &kp INT3
+&none      &none    &kp F2   &kp F3      &kp F4     &kp F5         &none  &none  &kp PG_UP      &kp HOME  &kp UP         &kp END     &none      &kp RBKT
+&none      &kp F6   &kp F7   &kp F8      &kp F9     &kp F10        &none         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &none      &kp NUHS
+&kp LSHFT  &kp F11  &kp F12  &kp LA(F4)  &kp LC(Z)  &kp LG(LS(S))  &none         &kp INT5       &kp INT2  &kp BACKSPACE  &kp DELETE  &none      &none
+&kp LCTRL  &none    &none    &kp LG(E)   &none      &none          &none  &none  &none          &none     &none          &none       &none      &none
             >;
+
+            label = "Func";
         };
 
         layer_3 {
