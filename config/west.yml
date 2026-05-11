@@ -14,5 +14,9 @@ manifest:
     - name: zmk-driver-paw3222
       remote: sekigon-gonnoc
       revision: main
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.1.0
+      path: modules/prospector-zmk-module
   self:
     path: config
