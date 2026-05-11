@@ -16,6 +16,146 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Main {
+            bindings = <&to 0>;
+            key-positions = <16 14>;
+        };
+
+        MVEdit {
+            bindings = <&to 3>;
+            key-positions = <28 26 27>;
+        };
+
+        SoftOff {
+            bindings = <&soft_off>;
+            key-positions = <0 1 10 11>;
+        };
+
+        Naginata {
+            bindings = <&to 0>;
+            key-positions = <6 7 8>;
+        };
+
+        Kana_Roma_Toggle {
+            bindings = <&kp LA(INT_KANA)>;
+            key-positions = <9 10 11>;
+        };
+
+        cbSingleQ {
+            bindings = <&SingleQ>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        cbDoubleQ {
+            bindings = <&DoubleQ>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        cbKakkoNami {
+            bindings = <&KakkozNami>;
+            key-positions = <45 46>;
+            layers = <0>;
+        };
+
+        cbKakkoMaru {
+            bindings = <&KakkoMaru>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        KakkoKagi {
+            bindings = <&KakkoKagi>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
+
+        cbCommand {
+            bindings = <&kp LA(LG(SPACE))>;
+            key-positions = <58 33>;
+        };
+
+        cbLauncher {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <58 32>;
+        };
+
+        cbCtrlA {
+            bindings = <&kp LC(A)>;
+            key-positions = <25 26>;
+        };
+
+        cbCtrlC {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        cbCtrlV {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+        };
+
+        cbCtrlZ {
+            bindings = <&kp LC(Z)>;
+            key-positions = <37 38>;
+        };
+
+        cbCtrlX {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 28>;
+        };
+    };
+
+    macros {
+        KanaToLY0: KanaToLY0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT2>, <&macro_wait_time 20>, <&to 0>;
+
+            label = "KANATOLY0";
+        };
+
+        SingleQ: SingleQ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7) &kp LS(N7) &kp LEFT>;
+            label = "SINGLEQ";
+        };
+
+        DoubleQ: DoubleQ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N2) &kp LS(N2) &kp LEFT>;
+            label = "DOUBLEQ";
+        };
+
+        KakkoKagi: KakkoKagi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(NUHS) &kp LEFT>;
+            label = "KAKKOKAGI";
+        };
+
+        KakkozNami: KakkozNami {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp NUHS &kp LEFT>;
+            label = "KAKKOZNAMI";
+        };
+
+        KakkoMaru: KakkoMaru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "KAKKOMARU";
+        };
+    };
+
+/ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
