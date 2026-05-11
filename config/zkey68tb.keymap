@@ -21,92 +21,92 @@
 
         Main {
             bindings = <&to 0>;
-            key-positions = <16 14>;
+            key-positions = <16 18>;
         };
 
         MVEdit {
             bindings = <&to 3>;
-            key-positions = <28 26 27>;
+            key-positions = <31 32 30>;
         };
 
         SoftOff {
             bindings = <&soft_off>;
-            key-positions = <0 1 10 11>;
+            key-positions = <0 1 12 13>;
         };
 
         Naginata {
             bindings = <&to 0>;
-            key-positions = <6 7 8>;
+            key-positions = <7 8 9>;
         };
 
         Kana_Roma_Toggle {
             bindings = <&kp LA(INT_KANA)>;
-            key-positions = <9 10 11>;
+            key-positions = <11 12 13>;
         };
 
         cbSingleQ {
             bindings = <&SingleQ>;
-            key-positions = <19 20>;
+            key-positions = <23 24>;
             layers = <0>;
         };
 
         cbDoubleQ {
             bindings = <&DoubleQ>;
-            key-positions = <31 32>;
+            key-positions = <36 37>;
             layers = <0>;
         };
 
         cbKakkoNami {
             bindings = <&KakkozNami>;
-            key-positions = <45 46>;
+            key-positions = <49 50>;
             layers = <0>;
         };
 
         cbKakkoMaru {
             bindings = <&KakkoMaru>;
-            key-positions = <20 21>;
+            key-positions = <24 25>;
             layers = <0>;
         };
 
         KakkoKagi {
             bindings = <&KakkoKagi>;
-            key-positions = <32 33>;
+            key-positions = <37 38>;
             layers = <0>;
         };
 
         cbCommand {
             bindings = <&kp LA(LG(SPACE))>;
-            key-positions = <58 33>;
+            key-positions = <62 38>;
         };
 
         cbLauncher {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <58 32>;
+            key-positions = <62 37>;
         };
 
         cbCtrlA {
             bindings = <&kp LC(A)>;
-            key-positions = <25 26>;
+            key-positions = <29 30>;
         };
 
         cbCtrlC {
             bindings = <&kp LC(C)>;
-            key-positions = <26 27>;
+            key-positions = <32 31>;
         };
 
         cbCtrlV {
             bindings = <&kp LC(V)>;
-            key-positions = <27 28>;
+            key-positions = <32 31>;
         };
 
         cbCtrlZ {
             bindings = <&kp LC(Z)>;
-            key-positions = <37 38>;
+            key-positions = <42 43>;
         };
 
         cbCtrlX {
             bindings = <&kp LC(X)>;
-            key-positions = <26 28>;
+            key-positions = <30 32>;
         };
     };
 
