@@ -9,8 +9,4 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
-    shield: zkey68tb_cv2_17_right
-    snippet: zmk-usb-logging
-    artifact-name: zkey68tb_cv2_17_right_debug    
-  - board: akdk_bt1
     shield: settings_reset
