@@ -4,6 +4,14 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include "layouts.dtsi"
 
+&zip_temp_layer {
+    excluded-positions = <
+        8 // Y
+        22 // U
+        23 // H
+    >;
+};
+
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
@@ -49,7 +57,9 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>
+            <&zip_temp_layer 4 10000>;
     };
 };
 
