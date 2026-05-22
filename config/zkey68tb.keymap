@@ -165,6 +165,17 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        lt_repeat: lt_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_REPEAT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";  // 長押しを少し強めに優先
+            tapping-term-ms = <1000>;   // 長押し判定 (好みに応じて200～300で調整)
+            quick-tap-ms = <900>;       // タップ+長押しでリピートさせる時間
+        };
     };
 
     keymap {
@@ -172,11 +183,11 @@
 
         Main {
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3            &kp N4  &kp N5       &none        &none        &kp NUMBER_6  &kp N7                 &kp N8             &kp N9          &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E             &kp R   &kp T        &none        &to 4        &kp Y         &kp U                  &kp I              &kp O           &kp P     &kp LBKT
-&kp CAPS   &kp A     &kp S     &hm LEFT_SHIFT D  &kp F   &hm LCTRL G  &none                     &hm RCTRL H   &kp J                  &hm RIGHT_SHIFT K  &kp L           &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C             &kp V   &kp B        &none                     &kp N         &kp M                  &kp COMMA          &kp DOT         &kp FSLH  &kp INT_RO
-&kp LCTRL  &kp LGUI  &kp LALT  &mo 5             &mo 2   &mo 1        &lt 4 SPACE  &lt 5 ENTER  &kp SPACE     &mt RIGHT_SHIFT GRAVE  &none              &kp LEFT_ARROW  &kp DOWN  &kp RIGHT
+&kp ESC    &kp N1    &kp N2    &kp N3            &kp N4  &kp N5       &none               &none        &kp NUMBER_6  &kp N7                 &kp N8             &kp N9          &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W     &kp E             &kp R   &kp T        &none               &to 4        &kp Y         &kp U                  &kp I              &kp O           &kp P     &kp LBKT
+&kp CAPS   &kp A     &kp S     &hm LEFT_SHIFT D  &kp F   &hm LCTRL G  &none                            &hm RCTRL H   &kp J                  &hm RIGHT_SHIFT K  &kp L           &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z     &kp X     &kp C             &kp V   &kp B        &none                            &kp N         &kp M                  &kp COMMA          &kp DOT         &kp FSLH  &kp INT_RO
+&kp LCTRL  &kp LGUI  &kp LALT  &mo 5             &mo 2   &mo 1        &lt_repeat 4 SPACE  &lt 5 ENTER  &kp SPACE     &mt RIGHT_SHIFT GRAVE  &none              &kp LEFT_ARROW  &kp DOWN  &kp RIGHT
             >;
 
             label = "MAIN";
@@ -198,7 +209,7 @@
             bindings = <
 &none      &none    &none    &none       &none      &none          &none  &none  &none          &none     &none          &none       &kp EQUAL  &kp INT3
 &none      &none    &kp F2   &kp F3      &kp F4     &kp F5         &none  &none  &kp PG_UP      &kp HOME  &kp UP         &kp END     &none      &kp RBKT
-&none      &kp F6   &kp F7   &kp F8      &kp F9     &kp F10        &none         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &none      &kp NUHS
+&none      &kp F6   &kp F7   &kp F8      &kp F9     &kp F10        &none         &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &kp ENTER  &kp NUHS
 &kp LSHFT  &kp F11  &kp F12  &kp LA(F4)  &kp LC(Z)  &kp LG(LS(S))  &none         &kp INT5       &kp INT2  &kp BACKSPACE  &kp DELETE  &none      &none
 &kp LCTRL  &none    &none    &none       &none      &none          &none  &none  &none          &none     &none          &none       &none      &none
             >;
