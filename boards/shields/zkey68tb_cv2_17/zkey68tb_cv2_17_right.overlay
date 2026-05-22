@@ -3,14 +3,12 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include "layouts.dtsi"
-#include <input/processors.dtsi>
 
 &zip_temp_layer {
     excluded-positions = <
-        18 // J
-        19 // K
-        21 // ;
-        34 // Ctrl
+        8
+        22
+        23
     >;
 };
 
@@ -60,7 +58,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>,
             <&zip_temp_layer 4 10000>;
     };
 };
