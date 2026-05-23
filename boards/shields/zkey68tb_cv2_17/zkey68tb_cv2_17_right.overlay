@@ -61,15 +61,13 @@
     };
 
     /* カスタムInput Processor定義 */
-    / {
-        input_processors {
-            zip_scroll_y_scaler: zip_scroll_y_scaler {
-                compatible = "zmk,input-processor-scaler";
-                #input-processor-cells = <2>;
-                type = <INPUT_EV_REL>;
-                codes = <INPUT_REL_WHEEL>;
-                track-remainders;
-            };
+    input_processors {
+        zip_scroll_y_scaler: zip_scroll_y_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+            track-remainders;
         };
     };
 
@@ -83,7 +81,7 @@
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 4   /* 1/4倍に減速 */
+                &zip_scroll_y_scaler 1 4   /* カスタム定義に差し替え、1/4倍に減速 */
             >;
         };
     };
