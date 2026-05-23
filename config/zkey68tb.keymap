@@ -108,11 +108,6 @@
             bindings = <&kp LC(X)>;
             key-positions = <30 32>;
         };
-
-        est {
-            bindings = <&none>;
-            key-positions = <35 36 48 37>;
-        };
     };
 
     macros {
