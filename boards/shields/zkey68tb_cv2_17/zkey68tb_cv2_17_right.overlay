@@ -67,7 +67,14 @@
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
             codes = <INPUT_REL_WHEEL>;
-            /* track-remainders; */
+            track-remainders;
+        };
+        
+        zip_y_to_scroll_mapper: zip_y_to_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
     };
 
@@ -80,8 +87,8 @@
         scroller {
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
-                &zip_xy_to_scroll_mapper
-                &zip_scroll_y_scaler 1 8   /* カスタム定義に差し替え、1/8倍に減速 */
+                &zip_y_to_scroll_mapper
+                &zip_scroll_y_scaler 1 4   /* カスタム定義に差し替え、1/4倍に減速 */
             >;
         };
     };
