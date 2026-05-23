@@ -70,7 +70,7 @@
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 8   /* 1/8倍に減速 */
+                &zip_scroll_scaler 1 4   /* 1/4倍に減速 */
             >;
         };
     };
