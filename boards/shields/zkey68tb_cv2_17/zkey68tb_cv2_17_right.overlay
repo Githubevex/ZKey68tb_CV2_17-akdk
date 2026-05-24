@@ -87,7 +87,7 @@
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
                 &zip_y_to_scroll_mapper
-                &zip_scroll_y_scaler 1 4   /* カスタム定義に差し替え、1/4倍に減速 */
+                &zip_scroll_y_scaler 1 1   /* カスタム定義に差し替え、1倍に */
             >;
         };
     };
