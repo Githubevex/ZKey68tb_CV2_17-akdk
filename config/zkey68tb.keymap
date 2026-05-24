@@ -111,7 +111,7 @@
 
         test {
             bindings = <&none>;
-            key-positions = <41 54>;
+            key-positions = <0 14 28>;
         };
     };
 
