@@ -75,6 +75,14 @@
             type = <INPUT_EV_REL>;
             map = <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
+        
+        zip_scroll_x_null: zip_scroll_x_null {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>;
+            track-remainders;
+        };
     };
 
     trackball_listener: trackball_listener {
@@ -86,8 +94,9 @@
         scroller {
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
+                &zip_scroll_x_null 0 1      /* X軸移動を無効化 */
                 &zip_y_to_scroll_mapper
-                &zip_scroll_y_scaler 1 1   /* カスタム定義に差し替え、1倍に */
+                &zip_scroll_y_scaler 1 2   /* カスタム定義に差し替え、1/2倍に */
             >;
         };
     };
