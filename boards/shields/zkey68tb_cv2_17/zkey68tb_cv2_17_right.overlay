@@ -96,7 +96,7 @@
             input-processors = <
                 &zip_scroll_x_null 0 1      /* X軸移動を無効化 */
                 &zip_y_to_scroll_mapper
-                &zip_scroll_y_scaler 1 2   /* カスタム定義に差し替え、1/2倍に */
+                &zip_scroll_y_scaler 2 3    /* カスタム定義に差し替え */
             >;
         };
     };
