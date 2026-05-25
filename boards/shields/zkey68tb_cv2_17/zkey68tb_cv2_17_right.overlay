@@ -69,18 +69,18 @@
             track-remainders;
         };
         
-        zip_y_to_scroll_mapper: zip_y_to_scroll_mapper {
+        zip_x_to_scroll_mapper: zip_x_to_scroll_mapper {
             compatible = "zmk,input-processor-code-mapper";
             #input-processor-cells = <0>;
             type = <INPUT_EV_REL>;
-            map = <INPUT_REL_Y INPUT_REL_WHEEL>;
+            map = <INPUT_REL_X INPUT_REL_WHEEL>;
         };
         
-        zip_scroll_x_null: zip_scroll_x_null {
+        zip_scroll_y_null: zip_scroll_y_null {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_X>;
+            codes = <INPUT_REL_Y>;
             track-remainders;
         };
     };
@@ -94,9 +94,9 @@
         scroller {
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
-                &zip_scroll_x_null 0 1      /* X軸移動を無効化 */
-                &zip_y_to_scroll_mapper
-                &zip_scroll_y_scaler 1 2    /* カスタム定義に差し替え */
+                &zip_x_to_scroll_mapper      /* X→WHEEL: 物理上下をスクロール */
+                &zip_scroll_y_null 0 1       /* Y軸無効化: 物理左右を無効化 */
+                &zip_scroll_y_scaler 1 2     /* カスタム定義に差し替え */
             >;
         };
     };
