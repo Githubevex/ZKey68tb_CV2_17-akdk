@@ -4,11 +4,15 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include "layouts.dtsi"
 
+
 &zip_temp_layer {
     excluded-positions = <
-        8
+        9
         22
         23
+        35
+        41
+        54
     >;
 };
 
@@ -54,12 +58,47 @@
             ;
     };
 
+    /* カスタムInput Processor定義 */
+    input_processors {
+        zip_x_to_scroll_mapper: zip_x_to_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_X INPUT_REL_WHEEL>;
+        };
+        
+        zip_scroll_y_null: zip_scroll_y_null {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_Y>;
+            track-remainders;
+        };
+        
+        zip_scroll_x_scaler: zip_scroll_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>;
+            track-remainders;
+        };
+    };
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>,
             <&zip_temp_layer 4 10000>;
+        scroller {
+            layers = <3>;  /* レイヤー3のときスクロールに変換 */
+            input-processors = <
+                &zip_xy_transform INPUT_TRANSFORM_X_INVERT   /* X軸反転: スクロール方向反転 */
+                &zip_scroll_x_scaler 1 10                    /* カスタム定義に差し替え */
+                &zip_x_to_scroll_mapper                      /* X→WHEEL: 物理上下をスクロール */
+                &zip_scroll_y_null 0 1                       /* Y軸無効化: 物理左右を無効化 */
+            >;
+        };
     };
 };
 
