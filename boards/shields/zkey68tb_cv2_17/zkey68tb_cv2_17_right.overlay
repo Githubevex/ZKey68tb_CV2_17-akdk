@@ -95,9 +95,9 @@
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
                 &zip_xy_transform INPUT_TRANSFORM_X_INVERT   /* X軸反転: スクロール方向反転 */
+                &zip_scroll_x_scaler 1 10                    /* カスタム定義に差し替え */
                 &zip_x_to_scroll_mapper                      /* X→WHEEL: 物理上下をスクロール */
                 &zip_scroll_y_null 0 1                       /* Y軸無効化: 物理左右を無効化 */
-                &zip_scroll_y_scaler 1 10                     /* カスタム定義に差し替え */
             >;
         };
     };
