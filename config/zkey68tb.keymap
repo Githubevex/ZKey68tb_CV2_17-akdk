@@ -258,7 +258,7 @@
             label = "KeyPad";
         };
 
-        Naginata {
+        Nagi1 {
             bindings = <
 &kp ESCAPE      &trans               &trans    &trans  &trans  &trans          &trans     &trans     &trans           &trans         &trans   &trans          &trans     &trans
 &kp TAB         &none                &kp G     &kp W   &kp D   &kp LEFT_ARROW  &trans     &trans     &kp RIGHT_ARROW  &kp BACKSPACE  &kp DOT  &kp R           &kp EQUAL  &kp DELETE
@@ -267,10 +267,10 @@
 &kp LCTRL       &kp LEFT_GUI         &kp LALT  &trans  &mo 2   &trans          &kp SPACE  &kp ENTER  &trans           &trans         &trans   &kp LEFT_ARROW  &to 0      &kp RIGHT_ARROW
             >;
 
-            label = "Naginata";
+            label = "Nagi1";
         };
 
-        layer_7 {
+        Nagi2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -278,6 +278,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "Nagi2";
         };
     };
 };
