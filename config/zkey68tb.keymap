@@ -109,9 +109,9 @@
             key-positions = <30 32>;
         };
 
-        test {
-            bindings = <&none>;
-            key-positions = <7 21 57>;
+        cbEnter {
+            bindings = <&kp ENTER>;
+            key-positions = <46 45>;
         };
     };
 
@@ -157,6 +157,22 @@
             #binding-cells = <0>;
             bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
             label = "KAKKOMARU";
+        };
+
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANG1 &kp INT4 &to 6>;
+
+            label = "NG_ON";
+        };
+
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANG2 &kp INT5 &to 0>;
+
+            label = "NG_OFF";
         };
     };
 
