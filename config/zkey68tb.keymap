@@ -272,11 +272,11 @@
 
         Nagi2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LS(COMMA)  &kp NUHS   &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LS(N0)  &kp LS(COMMA)  &kp NUHS  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Nagi2";
