@@ -1187,11 +1187,11 @@
 
         Nagi1 {
             bindings = <
-&kp ESCAPE      &trans               &trans    &trans  &trans  &trans          &trans     &trans     &trans           &trans         &trans   &trans          &trans     &trans
-&kp TAB         &none                &kp G     &kp W   &kp D   &kp LEFT_ARROW  &trans     &trans     &kp RIGHT_ARROW  &kp BACKSPACE  &kp DOT  &kp R           &kp EQUAL  &kp DELETE
-&kp CAPSLOCK    &kp INTERNATIONAL_1  &kp SQT   &kp S   &kp T   &kp LS(Z)       &trans                &kp H            &kp N3         &kp E    &kp N4          &kp INT3   &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp MINUS            &kp V     &kp F   &kp B   &kp C           &none                 &kp Q            &kp U          &kp Y    &kp O           &kp SEMI   &kp RIGHT_BRACKET
-&kp LCTRL       &kp LEFT_GUI         &kp LALT  &trans  &mo 2   &mo 6           &kp SPACE  &kp ENTER  &lt 6 SPACE      &trans         &trans   &kp LEFT_ARROW  &to 0      &kp RIGHT_ARROW
+&kp ESCAPE      &none                &none     &none  &none  &none           &none      &none      &none            &none          &none    &none           &none      &none
+&kp TAB         &none                &kp G     &kp W  &kp D  &kp LEFT_ARROW  &none      &none      &kp RIGHT_ARROW  &kp BACKSPACE  &kp DOT  &kp R           &kp EQUAL  &kp DELETE
+&kp CAPSLOCK    &kp INTERNATIONAL_1  &kp SQT   &kp S  &kp T  &kp LS(Z)       &none                 &kp H            &kp N3         &kp E    &kp N4          &kp INT3   &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp MINUS            &kp V     &kp F  &kp B  &kp C           &none                 &kp Q            &kp U          &kp Y    &kp O           &kp SEMI   &kp RIGHT_BRACKET
+&kp LCTRL       &kp LEFT_GUI         &kp LALT  &none  &mo 2  &mo 6           &kp SPACE  &kp ENTER  &lt 6 SPACE      &none          &none    &kp LEFT_ARROW  &to 0      &kp RIGHT_ARROW
             >;
 
             label = "Nagi1";
