@@ -81,7 +81,7 @@
         device = <&trackball>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>,
-            <&zip_temp_layer 4 10000>;
+            <&zip_temp_layer 7 10000>;
         scroller {
             layers = <3>;  /* レイヤー3のときスクロールに変換 */
             input-processors = <
