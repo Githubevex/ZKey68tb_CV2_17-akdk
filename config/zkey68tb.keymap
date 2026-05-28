@@ -127,63 +127,63 @@
 
         n_ga {
             bindings = <&n_ga>;
-            key-positions = <33 36>;
+            key-positions = <36 32>;
             layers = <5>;
             timeout-ms = <180>;
         };
 
         n_gi {
             bindings = <&n_gi>;
-            key-positions = <36 16>;
+            key-positions = <36 17>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_gu {
             bindings = <&n_gu>;
-            key-positions = <36 33 18>;
+            key-positions = <36 32 17>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_ge {
             bindings = <&n_ge>;
-            key-positions = <36 33>;
+            key-positions = <36 30>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_go {
             bindings = <&n_go>;
-            key-positions = <46 36>;
+            key-positions = <36 45>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_za {
             bindings = <&n_za>;
-            key-positions = <33 23>;
+            key-positions = <23 32>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_ji {
             bindings = <&n_ji>;
-            key-positions = <19 36>;
+            key-positions = <36 18>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_zu {
             bindings = <&n_zu>;
-            key-positions = <33 25>;
+            key-positions = <25 32>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_ze {
             bindings = <&n_ze>;
-            key-positions = <30 36>;
+            key-positions = <36 29>;
             timeout-ms = <180>;
             layers = <5>;
         };
@@ -197,7 +197,7 @@
 
         n_da {
             bindings = <&n_da>;
-            key-positions = <33 48>;
+            key-positions = <48 32>;
             layers = <5>;
             timeout-ms = <180>;
         };
@@ -211,14 +211,14 @@
 
         n_du {
             bindings = <&n_du>;
-            key-positions = <38 33>;
+            key-positions = <38 32>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_de {
             bindings = <&n_de>;
-            key-positions = <18 36>;
+            key-positions = <36 17>;
             timeout-ms = <180>;
             layers = <5>;
         };
