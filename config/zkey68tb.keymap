@@ -134,14 +134,14 @@
 
         n_gi {
             bindings = <&n_gi>;
-            key-positions = <36 17>;
+            key-positions = <36 16>;
             timeout-ms = <180>;
             layers = <5>;
         };
 
         n_gu {
             bindings = <&n_gu>;
-            key-positions = <36 32 17>;
+            key-positions = <32 35>;
             timeout-ms = <180>;
             layers = <5>;
         };
