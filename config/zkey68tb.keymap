@@ -197,217 +197,217 @@
 
         n_da {
             bindings = <&n_da>;
-            key-positions = <32 16>;
+            key-positions = <33 48>;
             layers = <6>;
             timeout-ms = <180>;
         };
 
         n_di {
             bindings = <&n_di>;
-            key-positions = <19 17>;
+            key-positions = <33 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_du {
             bindings = <&n_du>;
-            key-positions = <16 21>;
+            key-positions = <38 33>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_de {
             bindings = <&n_de>;
-            key-positions = <3 19>;
+            key-positions = <18 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_do {
             bindings = <&n_do>;
-            key-positions = <19 15>;
+            key-positions = <32 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xa {
             bindings = <&kp LS(NUMBER_3)>;
-            key-positions = <1 19>;
+            key-positions = <36 15>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xi {
             bindings = <&kp LS(E)>;
-            key-positions = <1 20>;
+            key-positions = <37 15>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xu {
             bindings = <&kp LS(N4)>;
-            key-positions = <1 21>;
+            key-positions = <38 15>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xe {
             bindings = <&kp LS(NUMBER_5)>;
-            key-positions = <1 9>;
+            key-positions = <15 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         x_xo {
             bindings = <&kp LS(N6)>;
-            key-positions = <1 32>;
+            key-positions = <1 48>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xya {
             bindings = <&kp LS(NUMBER_7)>;
-            key-positions = <1 18>;
+            key-positions = <15 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xyu {
             bindings = <&kp LS(N8)>;
-            key-positions = <1 10>;
+            key-positions = <15 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_xyo {
             bindings = <&kp LS(N9)>;
-            key-positions = <1 8>;
+            key-positions = <15 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_kya {
             bindings = <&n_kya>;
-            key-positions = <18 2>;
+            key-positions = <16 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_kyu {
             bindings = <&n_kyu>;
-            key-positions = <2 10>;
+            key-positions = <16 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_kyo {
             bindings = <&n_kyo>;
-            key-positions = <2 8>;
+            key-positions = <16 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_sya {
             bindings = <&n_sya>;
-            key-positions = <4 18>;
+            key-positions = <18 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_syu {
             bindings = <&n_syu>;
-            key-positions = <10 4>;
+            key-positions = <18 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_syo {
             bindings = <&n_syo>;
-            key-positions = <8 4>;
+            key-positions = <18 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_cya {
             bindings = <&n_cya>;
-            key-positions = <18 17>;
+            key-positions = <33 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_cyu {
             bindings = <&n_cyu>;
-            key-positions = <17 10>;
+            key-positions = <33 26>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_cyo {
             bindings = <&n_cyo>;
-            key-positions = <8 17>;
+            key-positions = <33 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_nya {
             bindings = <&n_nya>;
-            key-positions = <18 15>;
+            key-positions = <32 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_nyu {
             bindings = <&n_nyu>;
-            key-positions = <10 15>;
+            key-positions = <32 26>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_nyo {
             bindings = <&n_nyo>;
-            key-positions = <8 15>;
+            key-positions = <32 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_hya {
             bindings = <&n_hya>;
-            key-positions = <18 26>;
+            key-positions = <43 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_hyu {
             bindings = <&n_hyu>;
-            key-positions = <10 26>;
+            key-positions = <43 26>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_hyo {
             bindings = <&n_hyo>;
-            key-positions = <8 26>;
+            key-positions = <43 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_mya {
             bindings = <&n_mya>;
-            key-positions = <18 14>;
+            key-positions = <30 35>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_myu {
             bindings = <&n_myu>;
-            key-positions = <10 14>;
+            key-positions = <30 26>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_myo {
             bindings = <&n_myo>;
-            key-positions = <8 14>;
+            key-positions = <30 24>;
             timeout-ms = <180>;
             layers = <6>;
         };
