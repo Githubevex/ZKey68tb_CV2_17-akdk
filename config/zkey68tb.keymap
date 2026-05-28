@@ -34,11 +34,6 @@
             key-positions = <0 1 12 13>;
         };
 
-        Naginata {
-            bindings = <&to 0>;
-            key-positions = <7 8 9>;
-        };
-
         Kana_Roma_Toggle {
             bindings = <&kp LA(INT_KANA)>;
             key-positions = <11 12 13>;
@@ -115,14 +110,15 @@
         };
 
         // Naginata
-        combo_ng_on {
+
+        cb_ng_on {
             timeout-ms = <300>;
-            key-positions = <6 8 7>;
+            key-positions = <8 7 9>;
             bindings = <&ng_on>;
             layers = <0>;
         };
 
-        combo_ng_off {
+        cb_ng_off {
             timeout-ms = <300>;
             key-positions = <3 5>;
             bindings = <&ng_off>;
@@ -131,70 +127,70 @@
 
         n_ga {
             bindings = <&n_ga>;
-            key-positions = <16 19>;
+            key-positions = <33 36>;
             layers = <6>;
             timeout-ms = <180>;
         };
 
         n_gi {
             bindings = <&n_gi>;
-            key-positions = <19 2>;
+            key-positions = <36 16>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_gu {
             bindings = <&n_gu>;
-            key-positions = <16 19 3>;
+            key-positions = <36 33 18>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_ge {
             bindings = <&n_ge>;
-            key-positions = <14 19>;
+            key-positions = <36 33>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_go {
             bindings = <&n_go>;
-            key-positions = <28 19>;
+            key-positions = <46 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_za {
             bindings = <&n_za>;
-            key-positions = <16 7>;
+            key-positions = <33 23>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_ji {
             bindings = <&n_ji>;
-            key-positions = <4 19>;
+            key-positions = <19 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_zu {
             bindings = <&n_zu>;
-            key-positions = <16 9>;
+            key-positions = <33 25>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_ze {
             bindings = <&n_ze>;
-            key-positions = <13 19>;
+            key-positions = <30 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
 
         n_zo {
             bindings = <&n_zo>;
-            key-positions = <29 19>;
+            key-positions = <46 36>;
             timeout-ms = <180>;
             layers = <6>;
         };
@@ -611,9 +607,6 @@
             timeout-ms = <180>;
             layers = <6>;
         };
-
-
-
     };
 
     macros {
@@ -661,6 +654,7 @@
         };
 
         // Naginata
+
         ng_on: ng_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
