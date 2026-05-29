@@ -225,7 +225,7 @@
 
         n_do {
             bindings = <&n_do>;
-            key-positions = <32 36>;
+            key-positions = <36 31>;
             timeout-ms = <180>;
             layers = <5>;
         };
