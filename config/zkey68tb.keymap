@@ -695,7 +695,7 @@
         n_ge: n_ge {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SEMI &kp LEFT_BRACKET>;
+            bindings = <&kp SQT &kp LEFT_BRACKET>;
             label = "N_GE";
         };
 
